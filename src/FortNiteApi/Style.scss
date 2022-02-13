@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Merienda', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.navbar,.footer,.content {
+  max-width: 1540px;
+  margin: 0 auto;
+}
+.navbar,.footer {
+  background-color: #000000;
+  font-family: 'Merienda', cursive;
+}
+.content {
+  min-height: calc(100vh - 72px - 72px);
+}
+
+.navbar {
+  text-align: center;
+  position: sticky ;
+  top: 0 ;
+  z-index: 999 ;
+  transition: all 0.5s ease-in;
+  .navbar-brand {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.92);
+  padding: 45px 17px;
+  }
+.shop_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+  grid-gap: 3rem;
+}
+
+.yellow {
+  text-shadow: 0 1px 0 #faffc7;
+  //background-image: -webkit-linear-gradient(top, #fff966, #f3fd80);
+  //background-image: -moz-linear-gradient(top, #fff966, #f3fd80);
+  //background-image: -o-linear-gradient(top, #fff966, #f3fd80);
+  //background-image: linear-gradient(to bottom, #fff966, #f3fd80);
+  -webkit-animation: yellow 2s infinite;
+  -moz-animation: yellow 2s infinite;
+  -o-animation: yellow 2s infinite;
+  animation: yellow 2s infinite; }
+@-moz-keyframes yellow {
+  0%, 100% {
+    -moz-box-shadow: 1px 0 19px 4px #fff503, inset 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 0 19px 4px #fff503, inset 0 0 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+@-webkit-keyframes yellow {
+  0%, 100% {
+    -webkit-box-shadow: 1px 0px 19px 4px #fff503, inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 0px 19px 4px #fff503, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+@-o-keyframes yellow {
+  0%, 100% {
+    box-shadow: 1px 0px 19px 4px #fff503, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+@keyframes yellow {
+  0%, 100% {
+    box-shadow: 1px 0px 19px 4px #fff503, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+
+
+
+
+
+
+
+
+
+
+
+.active {
+  background-color: rgba(0,0,0,0.9);
+  transition: all 0.5s ease-in;
+}
+.box_shadow {
+  box-shadow: rgb(227, 227, 215) 0 0 15px 0;
+}
+.bg_black {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 330px) {
+  .navbar {
+    .navbar-brand {
+      font-size: 25px;
+    }
+  }
+}

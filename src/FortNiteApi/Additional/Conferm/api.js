@@ -1,0 +1,1 @@
+export const API = "https://fortniteapi.io/v1/shop?lang=en"
